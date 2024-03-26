@@ -24,14 +24,14 @@ delayForm.addEventListener('submit', event => {
       iziToast.success({
         color: 'green',
         position: 'topRight',
-        message: `✅ Fulfilled promise in ${timer}ms`,
+        message: `Fulfilled promise in ${timer}ms`,
       });
     })
     .catch(error => {
       iziToast.error({
         color: 'red',
         position: 'topRight',
-        message: `❌ Rejected promise in ${timer}ms`,
+        message: `Rejected promise in ${timer}ms`,
       });
     });
 });
